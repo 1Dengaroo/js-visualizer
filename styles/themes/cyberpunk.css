@@ -31,7 +31,8 @@
   --code-function: #00e5ff;
   --code-punctuation: #6090b0;
   --code-header-border: #1e2e3e;
-  --code-highlight-bg: rgba(0, 229, 255, 0.15);
+  --code-highlight-bg: rgba(0, 229, 255, 0.35);
+  --code-highlight-border: rgba(0, 229, 255, 0.65);
 
   /* Buttons */
   --btn-primary: #00e5ff;
@@ -174,15 +175,20 @@
   --shadow-opacity: 0.6;
   --shadow-2xs: 0px 2px 20px 0px hsl(240 80% 5% / 0.3);
   --shadow-xs: 0px 2px 20px 0px hsl(240 80% 5% / 0.3);
-  --shadow-sm: 0px 2px 20px 0px hsl(240 80% 5% / 0.6),
+  --shadow-sm:
+    0px 2px 20px 0px hsl(240 80% 5% / 0.6),
     0px 1px 2px -1px hsl(240 80% 5% / 0.6);
-  --shadow: 0px 2px 20px 0px hsl(240 80% 5% / 0.6),
+  --shadow:
+    0px 2px 20px 0px hsl(240 80% 5% / 0.6),
     0px 1px 2px -1px hsl(240 80% 5% / 0.6);
-  --shadow-md: 0px 2px 20px 0px hsl(240 80% 5% / 0.6),
+  --shadow-md:
+    0px 2px 20px 0px hsl(240 80% 5% / 0.6),
     0px 2px 4px -1px hsl(240 80% 5% / 0.6);
-  --shadow-lg: 0px 2px 20px 0px hsl(240 80% 5% / 0.6),
+  --shadow-lg:
+    0px 2px 20px 0px hsl(240 80% 5% / 0.6),
     0px 4px 6px -1px hsl(240 80% 5% / 0.6);
-  --shadow-xl: 0px 2px 20px 0px hsl(240 80% 5% / 0.6),
+  --shadow-xl:
+    0px 2px 20px 0px hsl(240 80% 5% / 0.6),
     0px 8px 10px -1px hsl(240 80% 5% / 0.6);
   --shadow-2xl: 0px 2px 20px 0px hsl(240 80% 5% / 0.95);
 }

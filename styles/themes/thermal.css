@@ -39,7 +39,8 @@
   --code-function: #ff8c20;
   --code-punctuation: #70a880;
   --code-header-border: #251845;
-  --code-highlight-bg: rgba(255, 140, 32, 0.2);
+  --code-highlight-bg: rgba(255, 140, 32, 0.45);
+  --code-highlight-border: rgba(255, 140, 32, 0.75);
 
   /* Buttons — hot orange glow */
   --btn-primary: #ff8c20;
@@ -182,15 +183,20 @@
   --shadow-opacity: 0.7;
   --shadow-2xs: 0px 2px 24px 0px hsl(280 80% 5% / 0.35);
   --shadow-xs: 0px 2px 24px 0px hsl(280 80% 5% / 0.35);
-  --shadow-sm: 0px 2px 24px 0px hsl(280 80% 5% / 0.7),
+  --shadow-sm:
+    0px 2px 24px 0px hsl(280 80% 5% / 0.7),
     0px 1px 2px -1px hsl(280 80% 5% / 0.7);
-  --shadow: 0px 2px 24px 0px hsl(280 80% 5% / 0.7),
+  --shadow:
+    0px 2px 24px 0px hsl(280 80% 5% / 0.7),
     0px 1px 2px -1px hsl(280 80% 5% / 0.7);
-  --shadow-md: 0px 2px 24px 0px hsl(280 80% 5% / 0.7),
+  --shadow-md:
+    0px 2px 24px 0px hsl(280 80% 5% / 0.7),
     0px 2px 4px -1px hsl(280 80% 5% / 0.7);
-  --shadow-lg: 0px 2px 24px 0px hsl(280 80% 5% / 0.7),
+  --shadow-lg:
+    0px 2px 24px 0px hsl(280 80% 5% / 0.7),
     0px 4px 6px -1px hsl(280 80% 5% / 0.7);
-  --shadow-xl: 0px 2px 24px 0px hsl(280 80% 5% / 0.7),
+  --shadow-xl:
+    0px 2px 24px 0px hsl(280 80% 5% / 0.7),
     0px 8px 10px -1px hsl(280 80% 5% / 0.7);
   --shadow-2xl: 0px 2px 24px 0px hsl(280 80% 5% / 0.95);
 }

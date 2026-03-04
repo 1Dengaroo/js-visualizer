@@ -185,7 +185,7 @@ interface VisualizerStore {
 function applyStep(
   state: VisualizerState,
   step: ELSerialisedStep,
-  direction: "forward" | "replay"
+  direction: "forward" | "replay",
 ): VisualizerState {
   const s = { ...state };
 

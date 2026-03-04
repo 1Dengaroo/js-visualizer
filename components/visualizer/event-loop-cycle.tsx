@@ -38,12 +38,7 @@ export function EventLoopCycle() {
             step={3}
           />
           <FlowConnector active={false} />
-          <LoopStage
-            label="Render"
-            active={false}
-            color="emerald"
-            step={4}
-          />
+          <LoopStage label="Render" active={false} color="emerald" step={4} />
         </div>
       </CardContent>
     </Card>

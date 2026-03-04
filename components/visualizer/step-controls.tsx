@@ -76,9 +76,7 @@ export function StepControls() {
             disabled={atEnd}
             variant={autoplay ? "outline" : "primary"}
             className="h-10 w-10 shrink-0 rounded-full p-0"
-            style={
-              autoplay ? { borderColor: "var(--warm-border)" } : undefined
-            }
+            style={autoplay ? { borderColor: "var(--warm-border)" } : undefined}
           >
             {autoplay ? (
               <CirclePause className="w-4 h-4" />
@@ -106,13 +104,9 @@ export function StepControls() {
                 className="h-8 px-2.5 rounded-lg text-xs font-medium transition-colors"
                 style={{
                   background:
-                    speed === preset.ms
-                      ? "var(--accent-blue)"
-                      : "var(--muted)",
+                    speed === preset.ms ? "var(--accent-blue)" : "var(--muted)",
                   color:
-                    speed === preset.ms
-                      ? "white"
-                      : "var(--muted-foreground)",
+                    speed === preset.ms ? "white" : "var(--muted-foreground)",
                 }}
               >
                 {preset.label}

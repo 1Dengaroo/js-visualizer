@@ -25,7 +25,8 @@
   --code-function: #61afef;
   --code-punctuation: #abb2bf;
   --code-header-border: #374151;
-  --code-highlight-bg: rgba(74, 124, 219, 0.25);
+  --code-highlight-bg: rgba(74, 124, 219, 0.5);
+  --code-highlight-border: rgba(74, 124, 219, 0.8);
 
   /* Buttons */
   --btn-primary: #4a7cdb;

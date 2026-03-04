@@ -23,7 +23,7 @@ const isAstNode = (obj: unknown): boolean => {
 const traverseChildren = (
   node: Node,
   state: object,
-  c: acornWalk.WalkerCallback<object>
+  c: acornWalk.WalkerCallback<object>,
 ) => {
   // Traverse the children of the node
   for (const key in node) {
@@ -139,6 +139,6 @@ export const calculatorTraverse = ({
       FunctionDeclaration() {
         // skip function declaration
       },
-    }
+    },
   );
 };

@@ -39,7 +39,8 @@
   --code-function: #50b0e0;
   --code-punctuation: #7890a8;
   --code-header-border: #1e3050;
-  --code-highlight-bg: rgba(100, 180, 255, 0.2);
+  --code-highlight-bg: rgba(100, 180, 255, 0.45);
+  --code-highlight-border: rgba(100, 180, 255, 0.75);
 
   /* Buttons */
   --btn-primary: #2e7cc9;

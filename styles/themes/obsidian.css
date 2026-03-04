@@ -40,7 +40,8 @@
   --code-function: #c8b888;
   --code-punctuation: #787068;
   --code-header-border: #2a2620;
-  --code-highlight-bg: rgba(200, 160, 80, 0.18);
+  --code-highlight-bg: rgba(200, 160, 80, 0.4);
+  --code-highlight-border: rgba(200, 160, 80, 0.7);
 
   /* Buttons — matte gold */
   --btn-primary: #c8a050;
@@ -183,15 +184,16 @@
   --shadow-opacity: 0.5;
   --shadow-2xs: 0px 2px 16px 0px hsl(30 20% 3% / 0.25);
   --shadow-xs: 0px 2px 16px 0px hsl(30 20% 3% / 0.25);
-  --shadow-sm: 0px 2px 16px 0px hsl(30 20% 3% / 0.5),
-    0px 1px 2px -1px hsl(30 20% 3% / 0.5);
-  --shadow: 0px 2px 16px 0px hsl(30 20% 3% / 0.5),
-    0px 1px 2px -1px hsl(30 20% 3% / 0.5);
-  --shadow-md: 0px 2px 16px 0px hsl(30 20% 3% / 0.5),
-    0px 2px 4px -1px hsl(30 20% 3% / 0.5);
-  --shadow-lg: 0px 2px 16px 0px hsl(30 20% 3% / 0.5),
-    0px 4px 6px -1px hsl(30 20% 3% / 0.5);
-  --shadow-xl: 0px 2px 16px 0px hsl(30 20% 3% / 0.5),
+  --shadow-sm:
+    0px 2px 16px 0px hsl(30 20% 3% / 0.5), 0px 1px 2px -1px hsl(30 20% 3% / 0.5);
+  --shadow:
+    0px 2px 16px 0px hsl(30 20% 3% / 0.5), 0px 1px 2px -1px hsl(30 20% 3% / 0.5);
+  --shadow-md:
+    0px 2px 16px 0px hsl(30 20% 3% / 0.5), 0px 2px 4px -1px hsl(30 20% 3% / 0.5);
+  --shadow-lg:
+    0px 2px 16px 0px hsl(30 20% 3% / 0.5), 0px 4px 6px -1px hsl(30 20% 3% / 0.5);
+  --shadow-xl:
+    0px 2px 16px 0px hsl(30 20% 3% / 0.5),
     0px 8px 10px -1px hsl(30 20% 3% / 0.5);
   --shadow-2xl: 0px 2px 16px 0px hsl(30 20% 3% / 0.9);
 }

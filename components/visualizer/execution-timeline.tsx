@@ -13,7 +13,7 @@ export function ExecutionTimeline() {
 
   useEffect(() => {
     const viewport = timelineRef.current?.querySelector(
-      "[data-slot='scroll-area-viewport']"
+      "[data-slot='scroll-area-viewport']",
     ) as HTMLElement | null;
     if (viewport) viewport.scrollTop = viewport.scrollHeight;
   }, [state.currentStep]);
@@ -23,10 +23,7 @@ export function ExecutionTimeline() {
       <CardHeader>
         <CardTitle className="text-lg font-semibold flex items-center justify-between">
           <span>Execution Timeline</span>
-          <Badge
-            variant="outline"
-            className="font-normal text-sm px-3 py-1"
-          >
+          <Badge variant="outline" className="font-normal text-sm px-3 py-1">
             {state.currentStep} steps executed
           </Badge>
         </CardTitle>
@@ -59,14 +56,14 @@ export function ExecutionTimeline() {
                         step.type === "push"
                           ? "var(--step-push-bg)"
                           : step.type === "pop" || step.type === "shift"
-                          ? "var(--step-pop-bg)"
-                          : "var(--step-neutral-bg)",
+                            ? "var(--step-pop-bg)"
+                            : "var(--step-neutral-bg)",
                       color:
                         step.type === "push"
                           ? "var(--step-push-text)"
                           : step.type === "pop" || step.type === "shift"
-                          ? "var(--step-pop-text)"
-                          : "var(--step-neutral-text)",
+                            ? "var(--step-pop-text)"
+                            : "var(--step-neutral-text)",
                     }}
                   >
                     {i + 1}
@@ -76,8 +73,8 @@ export function ExecutionTimeline() {
                       step.type === "push"
                         ? "text-step-push-text"
                         : step.type === "pop" || step.type === "shift"
-                        ? "text-step-pop-text"
-                        : "text-step-neutral-text"
+                          ? "text-step-pop-text"
+                          : "text-step-neutral-text"
                     }`}
                   >
                     {step.type}

@@ -40,7 +40,8 @@
   --code-function: #60b0ff;
   --code-punctuation: #b098d0;
   --code-header-border: #3a2860;
-  --code-highlight-bg: rgba(232, 64, 144, 0.22);
+  --code-highlight-bg: rgba(232, 64, 144, 0.5);
+  --code-highlight-border: rgba(232, 64, 144, 0.8);
 
   /* Buttons */
   --btn-primary: #e84090;

@@ -9,7 +9,12 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ThemePicker } from "@/components/theme-picker";
-import { CircleHelp, BookMarked, ExternalLink, TriangleAlert } from "lucide-react";
+import {
+  CircleHelp,
+  BookMarked,
+  ExternalLink,
+  TriangleAlert,
+} from "lucide-react";
 
 export function DashboardHeader() {
   return (
@@ -164,7 +169,8 @@ export function DashboardHeader() {
                     <ExternalLink className="w-3 h-3 shrink-0 opacity-50" />
                   </div>
                   <div className="text-xs mt-0.5">
-                    AST-based event loop analysis — great reference implementation
+                    AST-based event loop analysis — great reference
+                    implementation
                   </div>
                 </div>
               </a>

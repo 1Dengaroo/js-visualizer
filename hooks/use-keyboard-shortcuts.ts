@@ -36,5 +36,12 @@ export function useKeyboardShortcuts() {
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [steps.length, currentStep, stepForward, stepBackward, toggleAutoplay, setAutoplay]);
+  }, [
+    steps.length,
+    currentStep,
+    stepForward,
+    stepBackward,
+    toggleAutoplay,
+    setAutoplay,
+  ]);
 }

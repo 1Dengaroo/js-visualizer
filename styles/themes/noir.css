@@ -40,7 +40,8 @@
   --code-function: #e0e0e0;
   --code-punctuation: #686868;
   --code-header-border: #2a2a2a;
-  --code-highlight-bg: rgba(176, 176, 176, 0.15);
+  --code-highlight-bg: rgba(176, 176, 176, 0.35);
+  --code-highlight-border: rgba(176, 176, 176, 0.6);
 
   /* Buttons — silver with crimson primary */
   --btn-primary: #c41030;
@@ -183,15 +184,15 @@
   --shadow-opacity: 0.8;
   --shadow-2xs: 0px 3px 18px 0px hsl(0 0% 0% / 0.4);
   --shadow-xs: 0px 3px 18px 0px hsl(0 0% 0% / 0.4);
-  --shadow-sm: 0px 3px 18px 0px hsl(0 0% 0% / 0.8),
-    0px 1px 3px -1px hsl(0 0% 0% / 0.8);
-  --shadow: 0px 3px 18px 0px hsl(0 0% 0% / 0.8),
-    0px 1px 3px -1px hsl(0 0% 0% / 0.8);
-  --shadow-md: 0px 3px 18px 0px hsl(0 0% 0% / 0.8),
-    0px 3px 5px -1px hsl(0 0% 0% / 0.8);
-  --shadow-lg: 0px 3px 18px 0px hsl(0 0% 0% / 0.8),
-    0px 5px 8px -1px hsl(0 0% 0% / 0.8);
-  --shadow-xl: 0px 3px 18px 0px hsl(0 0% 0% / 0.8),
-    0px 10px 14px -1px hsl(0 0% 0% / 0.8);
+  --shadow-sm:
+    0px 3px 18px 0px hsl(0 0% 0% / 0.8), 0px 1px 3px -1px hsl(0 0% 0% / 0.8);
+  --shadow:
+    0px 3px 18px 0px hsl(0 0% 0% / 0.8), 0px 1px 3px -1px hsl(0 0% 0% / 0.8);
+  --shadow-md:
+    0px 3px 18px 0px hsl(0 0% 0% / 0.8), 0px 3px 5px -1px hsl(0 0% 0% / 0.8);
+  --shadow-lg:
+    0px 3px 18px 0px hsl(0 0% 0% / 0.8), 0px 5px 8px -1px hsl(0 0% 0% / 0.8);
+  --shadow-xl:
+    0px 3px 18px 0px hsl(0 0% 0% / 0.8), 0px 10px 14px -1px hsl(0 0% 0% / 0.8);
   --shadow-2xl: 0px 3px 18px 0px hsl(0 0% 0% / 0.98);
 }

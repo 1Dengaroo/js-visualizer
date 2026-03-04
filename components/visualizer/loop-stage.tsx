@@ -5,10 +5,7 @@ interface LoopStageProps {
   step: number;
 }
 
-const colors: Record<
-  string,
-  { bg: string; text: string; activeBg: string }
-> = {
+const colors: Record<string, { bg: string; text: string; activeBg: string }> = {
   blue: {
     bg: "bg-loop-blue-bg",
     text: "text-loop-blue-text",

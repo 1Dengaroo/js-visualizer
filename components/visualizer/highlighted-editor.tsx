@@ -155,7 +155,7 @@ function escapeHtml(str: string): string {
 
 function highlightCode(
   code: string,
-  highlightRange?: { start: number; end: number } | null
+  highlightRange?: { start: number; end: number } | null,
 ): string {
   const tokens = tokenize(code);
 
