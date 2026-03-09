@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QuFlow
 
-## Getting Started
+A step-by-step JavaScript event loop visualizer. Write or paste JavaScript code and watch how it flows through the call stack, task queue, microtask queue, and browser APIs in real time.
 
-First, run the development server:
+## What it does
+
+QuFlow parses JavaScript code into an AST, simulates the event loop execution model, and visualizes each step. You can step through manually or autoplay at different speeds.
+
+Supported constructs:
+
+- `console.log()`
+- `setTimeout()`
+- `Promise.resolve().then()`
+- `queueMicrotask()`
+- `requestAnimationFrame()`
+
+It does not support variables, loops, conditionals, async/await, or promise chaining. The focus is on illustrating how the event loop schedules and processes different task types.
+
+## Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Zustand for state
+- Acorn for AST parsing
+- Radix UI primitives
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm test
+```
 
-## Learn More
+Tests cover the simulation engine: AST parsing, step calculation, serialization, and type guards.
 
-To learn more about Next.js, take a look at the following resources:
+## Lint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/            Next.js app router (single page)
+components/     UI components and visualizer panels
+hooks/          Zustand store, autoplay, keyboard shortcuts
+utils/          Event loop simulation engine
+styles/themes/  Dark and light theme CSS
+```
+
+## How the simulation works
+
+1. Code is parsed into an AST using Acorn.
+2. The AST is traversed to build a sequence of event loop steps.
+3. Each step represents a push, pop, or shift on one of the queues (call stack, macrotask, microtask, rAF, web API, console).
+4. The UI replays these steps one at a time, updating each queue panel to show the current state.
+
+## License
+
+MIT
