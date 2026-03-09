@@ -4,19 +4,8 @@
 @import "shadcn/tailwind.css";
 
 /* Theme files */
-@import "../styles/themes/light.css";
 @import "../styles/themes/dark.css";
-@import "../styles/themes/midnight.css";
-@import "../styles/themes/sakura.css";
-@import "../styles/themes/cyberpunk.css";
-@import "../styles/themes/thermal.css";
-@import "../styles/themes/noir.css";
-@import "../styles/themes/solaris.css";
-@import "../styles/themes/arctic.css";
-@import "../styles/themes/moss.css";
-@import "../styles/themes/brutal.css";
-@import "../styles/themes/candy.css";
-@import "../styles/themes/obsidian.css";
+@import "../styles/themes/light.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -25,7 +14,7 @@
   --font-sans: Bricolage Grotesque, sans-serif;
   --font-serif: Lora, serif;
   --font-mono: JetBrains Mono, monospace;
-  --radius: 1.4rem;
+  --radius: 0.75rem;
   --spacing: 0.27rem;
   --tracking-normal: -0.025em;
   --letter-spacing: -0.025em;
@@ -35,19 +24,19 @@
   --shadow-spread: 0px;
   --shadow-opacity: 0.16;
   --shadow-color: #000000;
-  --shadow-2xs: 0px 2px 3px 0px hsl(0 0% 0% / 0.08);
-  --shadow-xs: 0px 2px 3px 0px hsl(0 0% 0% / 0.08);
+  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.06);
+  --shadow-xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.06);
   --shadow-sm:
-    0px 2px 3px 0px hsl(0 0% 0% / 0.16), 0px 1px 2px -1px hsl(0 0% 0% / 0.16);
+    0px 1px 3px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
   --shadow:
-    0px 2px 3px 0px hsl(0 0% 0% / 0.16), 0px 1px 2px -1px hsl(0 0% 0% / 0.16);
+    0px 1px 3px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
   --shadow-md:
-    0px 2px 3px 0px hsl(0 0% 0% / 0.16), 0px 2px 4px -1px hsl(0 0% 0% / 0.16);
+    0px 2px 4px 0px hsl(0 0% 0% / 0.1), 0px 2px 4px -1px hsl(0 0% 0% / 0.1);
   --shadow-lg:
-    0px 2px 3px 0px hsl(0 0% 0% / 0.16), 0px 4px 6px -1px hsl(0 0% 0% / 0.16);
+    0px 2px 6px 0px hsl(0 0% 0% / 0.1), 0px 4px 6px -1px hsl(0 0% 0% / 0.1);
   --shadow-xl:
-    0px 2px 3px 0px hsl(0 0% 0% / 0.16), 0px 8px 10px -1px hsl(0 0% 0% / 0.16);
-  --shadow-2xl: 0px 2px 3px 0px hsl(0 0% 0% / 0.4);
+    0px 4px 12px 0px hsl(0 0% 0% / 0.12), 0px 8px 10px -1px hsl(0 0% 0% / 0.12);
+  --shadow-2xl: 0px 6px 20px 0px hsl(0 0% 0% / 0.3);
   --shadow-offset-x: 0px;
   --shadow-offset-y: 2px;
 }
@@ -124,6 +113,7 @@
   --color-queue-blue-bg: var(--queue-blue-bg);
   --color-queue-blue-border: var(--queue-blue-border);
   --color-queue-blue-text: var(--queue-blue-text);
+  --color-queue-blue-accent: var(--queue-blue-accent);
   --color-queue-blue-icon-bg: var(--queue-blue-icon-bg);
   --color-queue-blue-item-bg: var(--queue-blue-item-bg);
   --color-queue-blue-item-border: var(--queue-blue-item-border);
@@ -131,6 +121,7 @@
   --color-queue-purple-bg: var(--queue-purple-bg);
   --color-queue-purple-border: var(--queue-purple-border);
   --color-queue-purple-text: var(--queue-purple-text);
+  --color-queue-purple-accent: var(--queue-purple-accent);
   --color-queue-purple-icon-bg: var(--queue-purple-icon-bg);
   --color-queue-purple-item-bg: var(--queue-purple-item-bg);
   --color-queue-purple-item-border: var(--queue-purple-item-border);
@@ -138,6 +129,7 @@
   --color-queue-amber-bg: var(--queue-amber-bg);
   --color-queue-amber-border: var(--queue-amber-border);
   --color-queue-amber-text: var(--queue-amber-text);
+  --color-queue-amber-accent: var(--queue-amber-accent);
   --color-queue-amber-icon-bg: var(--queue-amber-icon-bg);
   --color-queue-amber-item-bg: var(--queue-amber-item-bg);
   --color-queue-amber-item-border: var(--queue-amber-item-border);
@@ -145,6 +137,7 @@
   --color-queue-orange-bg: var(--queue-orange-bg);
   --color-queue-orange-border: var(--queue-orange-border);
   --color-queue-orange-text: var(--queue-orange-text);
+  --color-queue-orange-accent: var(--queue-orange-accent);
   --color-queue-orange-icon-bg: var(--queue-orange-icon-bg);
   --color-queue-orange-item-bg: var(--queue-orange-item-bg);
   --color-queue-orange-item-border: var(--queue-orange-item-border);
@@ -152,6 +145,7 @@
   --color-queue-emerald-bg: var(--queue-emerald-bg);
   --color-queue-emerald-border: var(--queue-emerald-border);
   --color-queue-emerald-text: var(--queue-emerald-text);
+  --color-queue-emerald-accent: var(--queue-emerald-accent);
   --color-queue-emerald-icon-bg: var(--queue-emerald-icon-bg);
   --color-queue-emerald-item-bg: var(--queue-emerald-item-bg);
   --color-queue-emerald-item-border: var(--queue-emerald-item-border);
@@ -215,7 +209,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  --radius: 1.4rem;
+  --radius: 0.75rem;
   --spacing: var(--spacing);
   --letter-spacing: var(--letter-spacing);
   --shadow-offset-y: var(--shadow-offset-y);
